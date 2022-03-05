@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="DemoWebShopFrameWork regression test suite" parallel ="tests" thread-count="2" verbose="3" >
+    <listeners>
+
+        <listener class-name="com.demowebshop.testlistener.AllureReportListener"></listener>
+    </listeners>
+
+    <test name="home page test" >
+        <classes>
+            <class name="com.demowebshop.tests.HomePageTest" />
+        </classes>
+    </test>cd
+
+    <test name="log in test">
+        <classes>
+            <class name="com.demowebshop.tests.LoginPageTest"/>
+
+        </classes>
+    </test>
+
+    <test name="register page test" >
+        <classes>
+            <class name="com.demowebshop.tests.RegisterPageTest" />
+        </classes>
+    </test>
+
+
+</suite>
